@@ -1,0 +1,45 @@
+.hoverable-text {
+  color: #329f5b;
+  position: relative;
+  cursor: pointer;
+
+  & > .hoverable-desc {
+    font-size: 1rem;
+    font-weight: 400;
+
+    pointer-events: none;
+
+    color: black;
+    background-color: white;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+    padding: 1em;
+    border-radius: 3px;
+
+    white-space: nowrap;
+    max-width: 330px;
+
+    position: absolute;
+    left: 50%;
+    bottom: -3em;
+    transform: translate(-50%, 5rem);
+    opacity: 0;
+
+    transition: all 0.25s;
+
+    & > a {
+      color: #2589bd;
+      text-decoration: none;
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+
+  &:hover > .hoverable-desc {
+    pointer-events: all;
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+}
