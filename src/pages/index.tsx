@@ -10,7 +10,6 @@ const IndexPage = () => (
     <SEO title="Home" />
     <div
       style={{
-        fontSize: 72,
         fontWeight: 700,
         fontFamily: "Poppins",
       }}
