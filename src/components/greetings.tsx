@@ -37,7 +37,7 @@ class Greeting extends React.Component<{}, { greeting: any; opacity: number }> {
         greeting: greetingMessages[random_index],
         opacity: 1,
       })
-    }, this.languageSwitchDelay / 12)
+    }, 250) // same as transition duration from css
   }
 
   onHover(hovering: boolean) {
