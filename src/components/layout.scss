@@ -1,0 +1,14 @@
+:root {
+  --primary-fg-color: black;
+  --primary-bg-color: white;
+  --hoverable-fg-color: #329f5b;
+  --link-color: #2589bd;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  &:hover {
+    font-weight: bold;
+  }
+}
