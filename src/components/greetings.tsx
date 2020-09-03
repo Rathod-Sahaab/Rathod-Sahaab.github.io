@@ -7,10 +7,12 @@ import "./greetings.scss"
 class Greeting extends React.Component<{}, { greeting: any; opacity: number }> {
   timerID: any
   languageSwitchDelay: number
+  prevGreetingIndex: number
   constructor(props: any) {
     super(props)
-    let random_index = Math.random() * greetingMessages.length
-    random_index = Math.floor(random_index)
+    const random_index = Math.floor(Math.random() * greetingMessages.length)
+
+    this.prevGreetingIndex = random_index
     this.state = {
       greeting: greetingMessages[random_index],
       opacity: 1,
@@ -31,8 +33,18 @@ class Greeting extends React.Component<{}, { greeting: any; opacity: number }> {
       opacity: 0,
     })
     setTimeout(() => {
-      let random_index = Math.random() * greetingMessages.length
-      random_index = Math.floor(random_index)
+      let random_index = Math.floor(Math.random() * greetingMessages.length)
+
+      if (random_index == this.prevGreetingIndex) {
+        if (random_index >= greetingMessages.length - 1) {
+          random_index = 0
+        } else {
+          random_index++
+        }
+      }
+
+      this.prevGreetingIndex = random_index
+
       this.setState({
         greeting: greetingMessages[random_index],
         opacity: 1,
