@@ -3,7 +3,6 @@ import HoverInfo from "./hoverInfo"
 import greetingMessages from "./greetingMessages"
 
 class Greeting extends React.Component<{}, { greeting: any }> {
-  greeting: any
   timerID: any
   languageSwitchDelay: number
   constructor(props: any) {
@@ -47,10 +46,10 @@ class Greeting extends React.Component<{}, { greeting: any }> {
         onMouseLeave={() => this.onHover(false)}
         style={{ fontSize: 72, fontFamily: `Poppins`, fontWeight: 700 }}
       >
-        {HoverInfo(
-          `${this.state.greeting.name}!`,
-          `Hello equivalent in <a href="${this.state.greeting.link}">${this.state.greeting.language}</a>`
-        )}
+        <HoverInfo
+          text={`${this.state.greeting.name}!`}
+          description={`Hello equivalent in <a href="${this.state.greeting.link}">${this.state.greeting.language}</a>`}
+        />
       </div>
     )
   }

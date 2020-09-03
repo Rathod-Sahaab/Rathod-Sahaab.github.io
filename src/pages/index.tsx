@@ -10,15 +10,17 @@ const IndexPage = () => (
     <SEO title="Home" />
     <div
       style={{
-        fontWeight: 700,
         fontFamily: "Poppins",
       }}
+      className="page"
     >
-      <Greeting /> I am{" "}
-      {HoverInfo(
-        "Abhay",
-        'Means <b>fearless</b> in <a href="https://en.wikipedia.org/wiki/Hindi">Hindi</a>'
-      )}
+      <Greeting />I am{" "}
+      <HoverInfo
+        text="Abhay"
+        description={
+          'Means <b>fearless</b> in <a href="https://en.wikipedia.org/wiki/Hindi">Hindi</a>'
+        }
+      />
     </div>
   </Layout>
 )

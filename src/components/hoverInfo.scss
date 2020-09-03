@@ -3,7 +3,7 @@
   position: relative;
   cursor: pointer;
 
-  & > .hoverable-desc {
+  & > .hoverable-description {
     font-size: 1rem;
     font-weight: 400;
 
@@ -32,7 +32,7 @@
     transition: all 0.25s;
   }
 
-  &:hover > .hoverable-desc {
+  &:hover > .hoverable-description {
     pointer-events: all;
     transform: translate(-50%, 0);
     opacity: 1;
