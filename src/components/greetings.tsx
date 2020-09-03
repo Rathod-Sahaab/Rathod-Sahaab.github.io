@@ -5,6 +5,7 @@ import greetingMessages from "./greetingMessages"
 class Greeting extends React.Component<{}, { greeting: any }> {
   greeting: any
   timerID: any
+  languageSwitchDelay: number
   constructor(props: any) {
     super(props)
     let random_index = Math.random() * greetingMessages.length
@@ -12,10 +13,11 @@ class Greeting extends React.Component<{}, { greeting: any }> {
     this.state = {
       greeting: greetingMessages[random_index],
     }
+    this.languageSwitchDelay = 3000
   }
 
   componentDidMount() {
-    this.timerID = setInterval(() => this.tick(), 3000)
+    this.timerID = setInterval(() => this.tick(), this.languageSwitchDelay)
   }
 
   componentWillUnmount() {
@@ -30,9 +32,21 @@ class Greeting extends React.Component<{}, { greeting: any }> {
     })
   }
 
+  onHover(hovering: boolean) {
+    if (hovering) {
+      clearInterval(this.timerID)
+    } else {
+      this.timerID = setInterval(() => this.tick(), this.languageSwitchDelay)
+    }
+  }
+
   render() {
     return (
-      <div style={{ fontSize: 72, fontFamily: `Poppins`, fontWeight: 700 }}>
+      <div
+        onMouseEnter={() => this.onHover(true)}
+        onMouseLeave={() => this.onHover(false)}
+        style={{ fontSize: 72, fontFamily: `Poppins`, fontWeight: 700 }}
+      >
         {HoverInfo(
           `${this.state.greeting.name}!`,
           `Hello equivalent in <a href="${this.state.greeting.link}">${this.state.greeting.language}</a>`
