@@ -2,7 +2,9 @@ import React from "react"
 import HoverInfo from "./hoverInfo"
 import greetingMessages from "./greetingMessages"
 
-class Greeting extends React.Component<{}, { greeting: any }> {
+import "./greetings.scss"
+
+class Greeting extends React.Component<{}, { greeting: any; opacity: number }> {
   timerID: any
   languageSwitchDelay: number
   constructor(props: any) {
@@ -11,6 +13,7 @@ class Greeting extends React.Component<{}, { greeting: any }> {
     random_index = Math.floor(random_index)
     this.state = {
       greeting: greetingMessages[random_index],
+      opacity: 1,
     }
     this.languageSwitchDelay = 3000
   }
@@ -24,11 +27,17 @@ class Greeting extends React.Component<{}, { greeting: any }> {
   }
 
   tick() {
-    let random_index = Math.random() * greetingMessages.length
-    random_index = Math.floor(random_index)
     this.setState({
-      greeting: greetingMessages[random_index],
+      opacity: 0,
     })
+    setTimeout(() => {
+      let random_index = Math.random() * greetingMessages.length
+      random_index = Math.floor(random_index)
+      this.setState({
+        greeting: greetingMessages[random_index],
+        opacity: 1,
+      })
+    }, this.languageSwitchDelay / 12)
   }
 
   onHover(hovering: boolean) {
@@ -40,15 +49,22 @@ class Greeting extends React.Component<{}, { greeting: any }> {
   }
 
   render() {
+    const { name, language, link } = this.state.greeting
     return (
       <div
+        id="greeting"
         onMouseEnter={() => this.onHover(true)}
         onMouseLeave={() => this.onHover(false)}
-        style={{ fontSize: 72, fontFamily: `Poppins`, fontWeight: 700 }}
+        style={{
+          fontSize: 72,
+          fontFamily: `Poppins`,
+          fontWeight: 700,
+          opacity: this.state.opacity,
+        }}
       >
         <HoverInfo
-          text={`${this.state.greeting.name}!`}
-          description={`Hello equivalent in <a href="${this.state.greeting.link}">${this.state.greeting.language}</a>`}
+          text={`${name}!`}
+          description={`Hello equivalent in <a href="${link}">${language}</a>`}
         />
       </div>
     )

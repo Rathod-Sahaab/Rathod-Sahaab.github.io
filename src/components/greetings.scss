@@ -1,18 +1,3 @@
-.hoverable-text {
-  animation: fadeOnChange 3s infinite;
-}
-
-@keyframes fadeOnChange {
-  0% {
-    opacity: 0;
-  }
-  9% {
-    opacity: 1;
-  }
-  91% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+#greeting {
+  transition: ease-in-out 0.25s all;
 }
