@@ -5,14 +5,23 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header>
     <div>
-      <h1 style={{ margin: 0 }}>
+      <h1
+        style={{
+          padding: "1em",
+          position: "fixed",
+          width: "100vw",
+          fontFamily: "Poppins",
+          fontWeight: 600,
+        }}
+      >
         <Link
           to="/"
           style={{
             textDecoration: `none`,
+            color: "var(--primary-fg-color)",
           }}
         >
-          {siteTitle}
+          A
         </Link>
       </h1>
     </div>

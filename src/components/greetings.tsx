@@ -68,9 +68,6 @@ class Greeting extends React.Component<{}, { greeting: any; opacity: number }> {
         onMouseEnter={() => this.onHover(true)}
         onMouseLeave={() => this.onHover(false)}
         style={{
-          fontSize: 72,
-          fontFamily: `Poppins`,
-          fontWeight: 700,
           opacity: this.state.opacity,
         }}
       >
