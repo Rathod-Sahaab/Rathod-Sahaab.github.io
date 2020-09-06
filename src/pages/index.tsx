@@ -5,7 +5,10 @@ import SEO from "../components/seo"
 import Greeting from "../components/greetings"
 import HoverInfo from "../components/hoverInfo"
 
+// import Image from "../components/image"
+
 import "./index.scss"
+import Skills from "../components/skills"
 
 const IndexPage = () => (
   <Layout>
@@ -34,6 +37,7 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
+    <Skills />
   </Layout>
 )
 

@@ -1,0 +1,44 @@
+#skills {
+  font-family: "Montserrat";
+  * {
+    justify-content: center;
+  }
+  h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 1em;
+  }
+}
+.list-skill {
+  display: flex;
+  padding-left: 8px;
+  flex-wrap: wrap;
+  a {
+    display: inline-block;
+    height: 64px;
+    margin: 24px;
+  }
+  .hover-card {
+    span {
+      color: grey;
+      &::before,
+      &::after {
+        content: "/";
+      }
+    }
+    p {
+      white-space: wrap;
+      text-transform: none;
+      font-family: "Poppins";
+      font-size: 12pt;
+      font-weight: normal;
+      white-space: normal;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .list-skill {
+    justify-content: center;
+  }
+}

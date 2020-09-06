@@ -6,4 +6,5 @@ const greetingMessages = [
   { name: "Bonjour", language: "French", link: "" },
   { name: "Konnichiwa", language: "Japanese", link: "" },
 ]
+
 export default greetingMessages

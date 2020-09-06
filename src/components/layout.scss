@@ -21,6 +21,14 @@ a {
   }
 }
 
+main {
+  scroll-snap-type: y mandatory;
+  overflow-y: auto;
+  height: 100vh;
+}
+
 .page {
   min-height: 100vh;
+  padding: 10vh 10vw;
+  scroll-snap-align: start;
 }
