@@ -80,6 +80,13 @@ export const skillsCollection: SkillArea[] = [
     category: "Tools",
     skills: [
       {
+        image: "./images/git.svg",
+        link: "https://git-scm.com",
+        name: "git",
+        desc:
+          "High-performance Distributed source code management system, do wonders with <i>checkpoints</i> and <i>multiplayer</i> in code",
+      },
+      {
         image: "./images/manjaro.svg",
         name: "Manjaro Linux",
         link: "https://manjaro.org",
@@ -99,6 +106,13 @@ export const skillsCollection: SkillArea[] = [
         name: "Inkscape",
         desc:
           "SVG editor, open source, efficient, fun, easy, logical. Produces stunning images. I use is for graphic designing and batch processing.",
+      },
+      {
+        image: "./images/glade.svg",
+        link: "https://glade.gnome.org/",
+        name: "Glade",
+        desc:
+          "WYSIWYG UI builder to use with GTK, ease creation of UI and even non-programmers can enhance the UI on programmers link the code to UI components. Save a lot of hard coding.",
       },
     ],
   },
@@ -141,14 +155,14 @@ export const skillsCollection: SkillArea[] = [
       {
         image: "./images/less.svg",
         link: "http://lesscss.org/",
-        name: "LESS",
+        name: "less",
         desc:
           "CSS preprocessor was born to ease developers work, providing features like variables, inheritance and logical relations. Renders exact CSS nothing more needed.",
       },
       {
         image: "./images/sass.svg",
         link: "https://sass-lang.com",
-        name: "SASS",
+        name: "Sass",
         desc:
           "Like less but not my personal favourite, as I learned less earlier",
       },

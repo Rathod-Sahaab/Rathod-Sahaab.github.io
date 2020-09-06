@@ -1,19 +1,27 @@
 import React from "react"
-import "./hoverInfo.scss"
+import HoverToolTip from "./hoverToolTip"
+
 type HoverProps = {
   text: string
   description: string
 }
 
+/**
+ * Utility function to help with simple text and hover function
+ */
 const HoverInfo = ({ text, description }: HoverProps) => {
-  return (
-    <span className="hoverable-text">
-      {text}
-      <div
-        className="hoverable-description"
-        dangerouslySetInnerHTML={{ __html: description }}
-      ></div>
-    </span>
+  return HoverToolTip(
+    () => {
+      return <span className="hoverable-text">{text}</span>
+    },
+    () => {
+      return (
+        <div
+          className="hoverable-description"
+          dangerouslySetInnerHTML={{ __html: description }}
+        ></div>
+      )
+    }
   )
 }
 export default HoverInfo
