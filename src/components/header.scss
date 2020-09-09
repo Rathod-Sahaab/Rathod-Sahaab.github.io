@@ -14,4 +14,20 @@ header {
 
   font-family: "Montserrat";
   font-weight: 600;
+
+  display: flex;
+  justify-content: space-between;
+
+  .header-contacts a {
+    font-size: 24px;
+    margin-left: 0.5em;
+  }
+  .link,
+  a {
+    color: var(--secondary-fg-color);
+  }
+
+  .link {
+    margin: auto 0;
+  }
 }
