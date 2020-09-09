@@ -1,45 +1,76 @@
 #skills {
   font-family: "Montserrat";
-  * {
-    justify-content: center;
-  }
-  h2 {
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-top: 1em;
-  }
-}
-.list-skill {
   display: flex;
-  padding-left: 8px;
-  flex-wrap: wrap;
-  a {
-    display: inline-block;
-    height: 64px;
-    margin: 24px;
+  justify-content: center;
+  align-items: center;
+  .content {
+    flex-wrap: nowrap;
+    display: flex;
   }
-  .hover-card {
-    width: 330px;
-    span {
-      color: grey;
-      &::before,
-      &::after {
-        content: "/";
-      }
+  .description {
+    max-width: 500px;
+    h2 {
+      font-size: 24pt;
+      font-family: "Pacifico";
     }
     p {
-      white-space: wrap;
-      text-transform: none;
-      font-family: "Poppins";
-      font-weight: normal;
-      white-space: normal;
+      margin-top: 0.75em;
+      font-family: "Open Sans";
+      text-align: justify;
+      font-size: 14pt;
+    }
+  }
+  .list-skill {
+    display: flex;
+    padding-left: 8px;
+    a {
+      display: inline-block;
+      height: 64px;
+      margin: 24px;
+    }
+    .hover-card {
+      width: 330px;
+      span {
+        color: grey;
+        &::before,
+        &::after {
+          content: "/";
+        }
+      }
+      p {
+        white-space: wrap;
+        text-transform: none;
+        font-family: "Poppins";
+        font-weight: normal;
+        white-space: normal;
+      }
     }
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  #skills {
+    .content {
+      flex-direction: column;
+      max-width: unset;
+      .description {
+        display: inline-block;
+      }
+      .list-skill {
+        justify-content: center;
+      }
+    }
+  }
+}
 @media only screen and (max-width: 767px) {
-  .list-skill {
+  #skills {
     align-items: center;
     flex-direction: column;
+    .illustration {
+      .list-skill {
+        align-items: center;
+        flex-direction: column;
+      }
+    }
   }
 }
