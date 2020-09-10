@@ -1,0 +1,10 @@
+.contacts-contacts a {
+  font-size: 30px;
+  margin-right: 0.5em;
+  color: darkgray !important;
+  @media only screen and (max-width: 767px) {
+    & {
+      font-size: 24px;
+    }
+  }
+}

@@ -5,18 +5,11 @@ import SEO from "../components/seo"
 import Greeting from "../components/greetings"
 import HoverInfo from "../components/hoverInfo"
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faGithub,
-  faGitlab,
-  faLinkedinIn,
-} from "@fortawesome/free-brands-svg-icons"
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
-
 // import Image from "../components/image"
 
 import "./index.scss"
 import Skills from "../components/skills"
+import Contacts from "../components/contacts"
 
 const IndexPage = () => (
   <Layout>
@@ -43,36 +36,7 @@ const IndexPage = () => (
           />
           , I am a Developer
         </div>
-        <div className="contacts">
-          <a
-            href="https://linkedin.com/in/rathod-sahaab"
-            target="_blank"
-            style={{ color: "#0077B5" }}
-          >
-            <FontAwesomeIcon icon={faLinkedinIn} />
-          </a>
-          <a
-            href="https://github.com/rathod-sahaab"
-            target="_blank"
-            style={{ color: "#323131" }}
-          >
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <a
-            href="https://gitlab.com/rathod-sahaab"
-            target="_blank"
-            style={{ color: "#FC6D26" }}
-          >
-            <FontAwesomeIcon icon={faGitlab} />
-          </a>
-          <a
-            href="mailto:abhayofficialone@gmail.com"
-            target="_blank"
-            style={{ color: "#f55" }}
-          >
-            <FontAwesomeIcon icon={faEnvelope} />
-          </a>
-        </div>
+        <Contacts />
       </div>
     </div>
     <Skills />
