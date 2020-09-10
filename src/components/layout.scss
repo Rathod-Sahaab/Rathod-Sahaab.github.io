@@ -29,7 +29,48 @@ html {
 }
 
 .page {
-  min-height: 100vh;
   padding: 10vh 10vw;
+  min-height: 100vh;
   scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .content {
+    flex-wrap: nowrap;
+    display: flex;
+    flex: 100%;
+    .description {
+      max-width: 500px;
+      h2 {
+        font-size: 27pt;
+        font-family: "Yellowtail";
+      }
+      p {
+        margin-top: 0.75em;
+        font-family: "Open Sans";
+        text-align: justify;
+        font-size: 14pt;
+      }
+    }
+    .illustration {
+      min-width: 500px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1279px) {
+  .page {
+    .content {
+      flex-direction: column;
+      & > *:not(:last-child) {
+        margin-bottom: 3em;
+      }
+      .description {
+        max-width: unset;
+      }
+      .illustration {
+        min-width: unset;
+      }
+    }
+  }
 }
