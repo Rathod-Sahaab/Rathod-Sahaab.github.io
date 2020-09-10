@@ -48,13 +48,13 @@
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1279px) {
   #skills {
     .content {
       flex-direction: column;
-      max-width: unset;
       .description {
-        display: inline-block;
+        max-width: unset;
+        padding-bottom: 1em;
       }
       .list-skill {
         justify-content: center;

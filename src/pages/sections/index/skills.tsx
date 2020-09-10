@@ -1,13 +1,14 @@
 import React from "react"
 import { v4 as uuid } from "uuid"
 
+import { SkillArea, Skill, skillsData } from "./skillsData"
+import HoverToolTip from "../../../components/hoverToolTip"
+
 import "./skills.scss"
-import { SkillArea, Skill, skillsCollection } from "./skillsCollection"
-import HoverToolTip from "./hoverToolTip"
 
 const Skills = () => {
   return (
-    <div id="skills" className="page">
+    <section id="skills" className="page">
       <div className="content">
         <div className="description">
           <h2>Skills</h2>
@@ -20,7 +21,7 @@ const Skills = () => {
           </p>
         </div>
         <div className="illustration">
-          {skillsCollection.map((area: SkillArea) => {
+          {skillsData.map((area: SkillArea) => {
             return (
               <div className="list-skill">
                 {area.skills.map((skill: Skill) => {
@@ -56,7 +57,7 @@ const Skills = () => {
           })}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

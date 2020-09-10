@@ -9,7 +9,7 @@ export type Skill = {
   image: string
 }
 
-export const skillsCollection: SkillArea[] = [
+export const skillsData: SkillArea[] = [
   {
     category: "Programming",
     skills: [
@@ -111,8 +111,8 @@ export const skillsCollection: SkillArea[] = [
         image: "./images/glade.svg",
         link: "https://glade.gnome.org/",
         name: "Glade",
-	      desc:
-		      "WYSIWYG UI builder to use with GTK, ease creation of UI and even non-programmers can enhance the UI once programmers link the code to UI components. Save a lot of hard coding.",
+        desc:
+          "WYSIWYG UI builder to use with GTK, ease creation of UI and even non-programmers can enhance the UI once programmers link the code to UI components. Save a lot of hard coding.",
       },
     ],
   },
