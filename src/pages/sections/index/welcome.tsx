@@ -8,16 +8,7 @@ import "./welcome.scss"
 
 const Welcome = () => {
   return (
-    <section
-      id="welcome"
-      className="page"
-      style={{
-        fontFamily: "Poppins",
-        paddingLeft: "10vw",
-        display: "flex",
-        alignItems: "center",
-      }}
-    >
+    <section id="welcome" className="page">
       <div>
         <Greeting />
         <div id="one-liner">

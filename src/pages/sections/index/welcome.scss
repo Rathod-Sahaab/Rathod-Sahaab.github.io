@@ -1,8 +1,15 @@
-#one-liner {
-  font-size: 48px;
-  @media only screen and (max-width: 767px) {
-    & {
-      font-size: 24px;
+#welcome {
+  font-family: "Poppins";
+  padding: 10vw;
+  & > div {
+    width: 100%;
+  }
+  #one-liner {
+    font-size: 48px;
+    @media only screen and (max-width: 767px) {
+      & {
+        font-size: 24px;
+      }
     }
   }
 }
