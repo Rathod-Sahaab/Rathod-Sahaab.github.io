@@ -1,8 +1,25 @@
 #about {
+  .description {
+    position: relative;
+    .extra {
+      display: none;
+    }
+    [type="checkbox"] {
+      display: none;
+      &:checked ~ .extra {
+        display: block;
+      }
+      &:checked ~ label {
+        display: none;
+      }
+    }
+    label {
+      color: var(--link-color);
+    }
+  }
   .illustration {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
   }
 }

@@ -40,15 +40,16 @@ html {
     display: flex;
     flex: 100%;
     .description {
-      max-width: 500px;
       h2 {
         font-size: 27pt;
         font-family: "Yellowtail";
       }
       p {
         margin-top: 0.75em;
-        font-family: "Open Sans";
         text-align: justify;
+      }
+      * {
+        font-family: "Roboto Condensed";
         font-size: 14pt;
       }
     }
