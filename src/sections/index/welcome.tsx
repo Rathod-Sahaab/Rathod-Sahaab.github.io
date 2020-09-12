@@ -1,8 +1,8 @@
 import React from "react"
 
-import Greeting from "../../../components/greetings"
-import HoverInfo from "../../../components/hoverInfo"
-import Contacts from "../../../components/contacts"
+import Greeting from "../../components/greetings"
+import HoverInfo from "../../components/hoverInfo"
+import Contacts from "../../components/contacts"
 
 import "./welcome.scss"
 

@@ -8,8 +8,6 @@ const About = () => {
     query {
       image: file(relativePath: { eq: "face.jpg" }) {
         childImageSharp {
-          # Specify the image processing specifications right in the query.
-          # Makes it trivial to update as your page's design changes.
           fixed(width: 300, height: 300) {
             ...GatsbyImageSharpFixed
           }
@@ -21,10 +19,13 @@ const About = () => {
     <section id="about" className="page">
       <div className="content">
         <div className="illustration">
-          <Img
-            style={{ borderRadius: "50%" }}
-            fixed={query.image.childImageSharp.fixed}
-          />
+          <div>
+            <Img
+              style={{ borderRadius: "50%" }}
+              fixed={query.image.childImageSharp.fixed}
+            />
+            <h3>@rathod-sahaab</h3>
+          </div>
         </div>
         <div className="description">
           <h2>About</h2>
@@ -33,7 +34,7 @@ const About = () => {
             fairly experienced with <b>C++, Python</b> and <b>full-stack</b>{" "}
             development. But, <i>programmer</i> being the keyword I can handle
             anything you throw at me. I have successfully completed the{" "}
-            <b>Google Summer of Code</b>, program in 2020.
+            <b>Google Summer of Code</b> program in 2020 with Inkscape.
           </p>
           <input type="checkbox" id="more-less-toggle" />
           <label htmlFor="more-less-toggle">more...</label>

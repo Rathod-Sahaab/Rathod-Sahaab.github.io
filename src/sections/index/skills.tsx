@@ -2,7 +2,7 @@ import React from "react"
 import { v4 as uuid } from "uuid"
 
 import { SkillArea, Skill, skillsData } from "./skillsData"
-import HoverToolTip from "../../../components/hoverToolTip"
+import HoverToolTip from "../../components/hoverToolTip"
 
 import "./skills.scss"
 

@@ -5,9 +5,9 @@ import SEO from "../components/seo"
 
 import "./index.scss"
 
-import Welcome from "./sections/index/welcome"
-import Skills from "./sections/index/skills"
-import About from "./sections/index/about"
+import Welcome from "../sections/index/welcome"
+import Skills from "../sections/index/skills"
+import About from "../sections/index/about"
 
 const IndexPage = () => (
   <Layout>
