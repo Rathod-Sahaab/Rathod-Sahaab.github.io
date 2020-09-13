@@ -4,6 +4,13 @@
   & > div {
     width: 100%;
   }
+  .contacts-contacts {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-bottom: 0.5em;
+    padding-right: 0.5em;
+  }
   #one-liner {
     font-size: 48px;
     @media only screen and (max-width: 767px) {

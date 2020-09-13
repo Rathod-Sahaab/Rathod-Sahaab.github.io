@@ -1,18 +1,18 @@
 :root {
-  --primary-fg-color: #e8e6e3;
-  --primary-bg-color: #181a1b;
-  --hoverable-fg-color: #1a936f;
+  --primary-fg-color: black;
+  --primary-bg-color: white;
+  --hoverable-fg-color: #329f5b;
   --link-color: #2589bd;
 }
 
-@media screen and (prefers-color-scheme: light) {
-  :root {
-    --primary-fg-color: black;
-    --primary-bg-color: white;
-    --hoverable-fg-color: #329f5b;
-    --link-color: #2589bd;
-  }
-}
+// @media screen and (prefers-color-scheme: dark) {
+//   :root {
+//     --primary-fg-color: #e8e6e3;
+//     --primary-bg-color: #181a1b;
+//     --hoverable-fg-color: #1a936f;
+//     --link-color: #2589bd;
+//   }
+// }
 
 *,
 *::before,
@@ -20,6 +20,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scrollbar-color: darkgray transparent;
 }
 
 a {
