@@ -11,7 +11,7 @@ import About from "../sections/index/about"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Home | Abhay Raj Singh - rathod-sahaab - GSoC'2020@Inkscape" />
     <Welcome />
     <About />
     <Skills />

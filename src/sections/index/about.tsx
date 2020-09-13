@@ -18,7 +18,7 @@ const About = () => {
   return (
     <section id="about" className="page">
       <div className="content">
-        <div className="illustration">
+        <div style={{ display: "none" }} className="illustration">
           <div>
             <Img
               style={{ borderRadius: "50%" }}

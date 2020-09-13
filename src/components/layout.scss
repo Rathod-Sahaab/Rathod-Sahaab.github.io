@@ -39,6 +39,7 @@ html {
     flex-wrap: nowrap;
     display: flex;
     flex: 100%;
+    max-width: 1000px;
     .description {
       h2 {
         font-size: 27pt;
@@ -49,7 +50,7 @@ html {
         text-align: justify;
       }
       * {
-        font-family: "Roboto Condensed";
+        font-family: "Poppins";
         font-size: 14pt;
       }
     }
@@ -68,6 +69,9 @@ html {
       }
       .description {
         max-width: unset;
+        * {
+          font-size: 12pt;
+        }
       }
       .illustration {
         min-width: unset;
