@@ -1,8 +1,17 @@
 :root {
-  --primary-fg-color: black;
-  --primary-bg-color: white;
-  --hoverable-fg-color: #329f5b;
+  --primary-fg-color: #e8e6e3;
+  --primary-bg-color: #181a1b;
+  --hoverable-fg-color: #1a936f;
   --link-color: #2589bd;
+}
+
+@media screen and (prefers-color-scheme: light) {
+  :root {
+    --primary-fg-color: black;
+    --primary-bg-color: white;
+    --hoverable-fg-color: #329f5b;
+    --link-color: #2589bd;
+  }
 }
 
 *,
@@ -35,6 +44,10 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background: var(--primary-bg-color);
+  color: var(--primary-fg-color);
+
   .content {
     flex-wrap: nowrap;
     display: flex;
