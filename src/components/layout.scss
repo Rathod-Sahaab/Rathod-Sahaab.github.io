@@ -32,8 +32,7 @@ a {
 }
 
 html {
-  scroll-snap-type: y mandatory;
-  scroll-snap-stop: always;
+  scroll-snap-type: y proximity;
   overflow-y: auto;
   width: 100%;
 }
