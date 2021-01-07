@@ -7,6 +7,17 @@ const Header = () => (
     <Link to="/" className="link">
       Scientist | Developer | Humble
     </Link>
+    <span className="page-nav">
+      <a href="#welcome">
+        Home
+      </a>
+      <a href="#about">
+        About
+      </a>
+      <a href="#skills">
+        Skills
+      </a>
+    </span>
   </header>
 )
 

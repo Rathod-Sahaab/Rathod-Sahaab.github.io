@@ -4,6 +4,7 @@ header {
   left: 0;
   background: var(--primary-bg-color);
   color: var(--primary-fg-color);
+  font-family: "Source code pro";
 
   z-index: 9;
 
@@ -13,11 +14,15 @@ header {
   text-transform: uppercase;
   // box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 
-  font-family: "Montserrat";
   font-weight: 600;
 
   display: flex;
   justify-content: space-between;
+
+  span.page-nav a {
+    display: inline-block;
+    padding: 0em 1em;
+  }
 
   .link,
   a {
