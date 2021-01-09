@@ -42,6 +42,12 @@ html {
   width: 100%;
 }
 
+body {
+  scroll-behavior: smooth;
+  scrollbar-color: var(--hoverable-fg-color) transparent;
+  scrollbar-width: 6px;
+}
+
 .page {
   padding: 10vh 10vw;
   min-height: 100vh;

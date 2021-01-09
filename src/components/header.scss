@@ -7,7 +7,6 @@ header {
 
   font-family: "Source Code Pro", monospace;
 
-
   z-index: 9;
 
   padding: 1em;
@@ -21,9 +20,19 @@ header {
   display: flex;
   justify-content: space-between;
 
-  span.page-nav a {
-    display: inline-block;
-    padding: 0em 1em;
+  span.page-nav {
+    @media screen and (max-width: 767px) {
+      position: fixed;
+      top: 50%;
+      right: 0;
+      transform: translateX(calc(50% - 1em)) rotate(90deg);
+    }
+    a {
+      display: inline-block;
+      &:not(:last-child) {
+        padding-right: 3em;
+      }
+    }
   }
 
   .link,
