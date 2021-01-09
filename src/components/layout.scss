@@ -27,7 +27,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  scrollbar-color: darkgray transparent;
 }
 
 a {
@@ -39,7 +38,6 @@ a {
 }
 
 html {
-  scroll-snap-type: y proximity;
   overflow-y: auto;
   width: 100%;
 }
@@ -78,6 +76,15 @@ html {
       min-width: 500px;
     }
   }
+}
+.ScrollbarsCustom-TrackY {
+  width: 6px !important;
+  z-index: 9;
+  right: 6px !important;
+}
+
+.ScrollbarsCustom-ThumbY {
+  background: var(--hoverable-fg-color) !important;
 }
 
 @media only screen and (max-width: 1279px) {

@@ -14,6 +14,8 @@ import Header from "./header"
 import { config } from "@fortawesome/fontawesome-svg-core"
 import "@fortawesome/fontawesome-svg-core/styles.css"
 
+import RSC from "react-scrollbars-custom"
+
 // Fix huge icon flash: https://github.com/FortAwesome/react-fontawesome/issues/234
 config.autoAddCss = false
 
@@ -21,7 +23,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <RSC id="scroll" style={{ width: "100vw", height: "100vh" }}>
+        <main>{children}</main>
+      </RSC>
     </>
   )
 }

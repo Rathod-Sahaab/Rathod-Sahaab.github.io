@@ -43,7 +43,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -53,7 +53,9 @@
      id="layer1"
      transform="translate(-43.88631,-67.291251)">
     <g
-       id="g1946">
+       id="g1946"
+       inkscape:export-xdpi="103.609"
+       inkscape:export-ydpi="103.609">
       <path
          inkscape:connector-curvature="0"
          d="m 89.8724,105.19998 43.44405,18.64495 -15.84949,-19.43237 z"
