@@ -1,0 +1,35 @@
+$radius: 9px;
+.projectCard {
+  position: relative;
+  &:hover {
+    .overlay {
+      opacity: 1;
+    }
+  }
+}
+.projectImage {
+  border-radius: $radius;
+  display: block;
+  max-width: 720px;
+  pointer-events: none;
+  width: 100%;
+}
+.overlay {
+  opacity: 0;
+  background-image: linear-gradient(#0000, #000f);
+  position: absolute;
+  border-radius: $radius;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1em;
+  transition: opacity 0.3s ease-in-out;
+  p {
+    font-size: 10pt !important;
+  }
+}

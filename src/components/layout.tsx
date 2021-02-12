@@ -14,9 +14,6 @@ import Header from "./header"
 import { config } from "@fortawesome/fontawesome-svg-core"
 import "@fortawesome/fontawesome-svg-core/styles.css"
 
-import SimpleBar from "simplebar-react"
-import "simplebar/dist/simplebar.min.css"
-
 // Fix huge icon flash: https://github.com/FortAwesome/react-fontawesome/issues/234
 config.autoAddCss = false
 

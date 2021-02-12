@@ -1,0 +1,14 @@
+#projects {
+  .projects-holder {
+    padding: 3em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & > *:not(:last-child) {
+      margin-bottom: 2em;
+    }
+  }
+  .description {
+    width: 100%;
+  }
+}

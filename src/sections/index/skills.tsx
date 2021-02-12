@@ -1,5 +1,4 @@
 import React from "react"
-import { v4 as uuid } from "uuid"
 
 import { SkillArea, Skill, skillsData } from "./skillsData"
 import HoverToolTip from "../../components/hoverToolTip"
@@ -24,16 +23,12 @@ const Skills = () => {
           {skillsData.map((area: SkillArea) => {
             return (
               <div className="list-skill">
-                {area.skills.map((skill: Skill) => {
+                {area.skills.map((skill: Skill, index: number) => {
                   let { name, image, link, desc } = skill
                   return HoverToolTip(
                     () => {
                       return (
-                        <a
-                          href={link}
-                          key={`skill_link_${uuid()}`}
-                          target="_blank"
-                        >
+                        <a href={link} key={index} target="_blank">
                           <img
                             src={image}
                             alt={name}

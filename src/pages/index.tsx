@@ -8,6 +8,7 @@ import "./index.scss"
 import Welcome from "../sections/index/welcome"
 import Skills from "../sections/index/skills"
 import About from "../sections/index/about"
+import Projects from "../sections/index/projects"
 
 const IndexPage = () => (
   <Layout>
@@ -15,6 +16,7 @@ const IndexPage = () => (
     <Welcome />
     <About />
     <Skills />
+    <Projects />
   </Layout>
 )
 
