@@ -33,3 +33,12 @@ $radius: 9px;
     font-size: 10pt !important;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .overlay {
+    position: static;
+    background: transparent;
+    display: block;
+    opacity: 1;
+  }
+}
