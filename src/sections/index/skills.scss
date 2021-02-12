@@ -7,8 +7,8 @@
       padding-left: 8px;
       a {
         display: inline-block;
-        height: 64px;
-        margin: 24px;
+        height: 56px;
+        margin: 20px;
       }
       .hover-card {
         width: 330px;
@@ -36,6 +36,9 @@
     .list-skill {
       justify-content: center;
     }
+    .hover-parent {
+      position: static;
+    }
   }
 }
 @media only screen and (max-width: 767px) {
@@ -46,6 +49,7 @@
       .list-skill {
         align-items: center;
         flex-wrap: wrap;
+        position: relative;
       }
     }
   }
