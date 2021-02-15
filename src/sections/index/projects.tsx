@@ -11,20 +11,7 @@ const projects = [
     alt: "Elide projects screen recording",
     description:
       "A website that simplifies urls and their management, it can be used to shorten, schedule URLs, point single url to multiple locations, get crucial statistics and much more. Cherry on the cake is it's open source!",
-  },
-  {
-    projectName: "elide",
-    gifSrc: ElideGif,
-    alt: "Elide projects screen recording",
-    description:
-      "A website that simplifies urls and their management, it can be used to shorten, schedule URLs, point single url to multiple locations, get crucial statistics and much more. Cherry on the cake is it's open source!",
-  },
-  {
-    projectName: "elide",
-    gifSrc: ElideGif,
-    alt: "Elide projects screen recording",
-    description:
-      "A website that simplifies urls and their management, it can be used to shorten, schedule URLs, point single url to multiple locations, get crucial statistics and much more. Cherry on the cake is it's open source!",
+    link: "https://console.elide.me",
   },
 ]
 

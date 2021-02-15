@@ -1,6 +1,10 @@
 $radius: 9px;
 .projectCard {
   position: relative;
+  cursor: pointer;
+  & * {
+    pointer-events: none;
+  }
   &:hover {
     .overlay {
       opacity: 1;
@@ -32,6 +36,13 @@ $radius: 9px;
   p {
     font-size: 10pt !important;
   }
+}
+
+.overlay.touch {
+  position: static;
+  background: transparent;
+  display: block;
+  opacity: 1;
 }
 
 @media screen and (max-width: 767px) {
